@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import connection from "../db";
-import { Task } from "../models/task.model";
+import { Task } from "../interface/task.interface";
 
 export const getAllTasks = (req: Request, res: Response) => {
   let query = "SELECT * FROM tasks";
